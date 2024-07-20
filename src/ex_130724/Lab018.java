@@ -16,6 +16,7 @@ public class Lab018 {
 
         char c3 = '\u1F6A';
         System.out.println(c3);
+        // :), :(, :D .;) -> unicode chars
 
 
     }
