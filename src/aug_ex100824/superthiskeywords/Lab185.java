@@ -34,7 +34,7 @@ class Student1 extends Person1{
     Student1(){
        // this("Deep");
         super();
-        System.out.println(this.a);
+       // System.out.println(this.a);
         //  super("Deep");
         //  super("Deep",47)
     }

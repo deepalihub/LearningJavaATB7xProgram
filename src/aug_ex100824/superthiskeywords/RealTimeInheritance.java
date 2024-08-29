@@ -14,9 +14,9 @@ class TestCase1 extends BaseClass{
         super();
         setBrowser("edge",true);
     }
-    @override
+   //  @override
     public void setBrowser(String browser, boolean isAuth){
-        super.setBrowser(browser,isAuth)
+        super.setBrowser(browser,isAuth);
     }
 
 }
@@ -33,11 +33,11 @@ class BaseClass{
 
     private String browser;
 
-    public String getBrowser() {
+    public String getBrowser(){
         return browser;
     }
 
-    public void setBrowser(String browser,boolean isAuth) {
+    public void setBrowser(String browser,boolean isAuth){
         if(isAuth){
         this.browser = browser;
     }else{
@@ -47,11 +47,11 @@ class BaseClass{
 
     void openBrowser(){
 
-        System.out.println("Chrom browser");
+        System.out.println("Chrome browser");
     }
         // Method Overloading
     void openBrowser(String browsername){
-        System.out.println("open browser  " + browserName);
+        System.out.println("open browser  " +browser);
     }
 
     void closeBrowser(){

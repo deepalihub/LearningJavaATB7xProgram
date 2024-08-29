@@ -5,7 +5,7 @@ public class Lab184 {
 
 class Student extends Person{
         // is A relationship Inheritance
-    @override
+    // @override
 
 
     void message(){
@@ -16,7 +16,7 @@ class Student extends Person{
     void dislplay(){
 
         super.message();
-        this.Student();
+        // this.student();
     }
 }
 class Person{
