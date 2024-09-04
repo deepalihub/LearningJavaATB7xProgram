@@ -1,8 +1,6 @@
 package aug_ex110824.RealLifeex;
 
-public class extends BaseClass {
-
-
+public class ChromeClass extends BaseClass {
     @Override
     String openBrowser(String browser) {
         System.out.println("open the Browser"); // this code is related to chrom only

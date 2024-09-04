@@ -1,6 +1,6 @@
 package aug_ex110824.RealLifeex;
 
-public class  extends BaseClass{
+public class FireFox extends BaseClass{
     @Override
     String openBrowser(String browser) {
         System.out.println("open the firefox");  //this code is only related to FireFox
