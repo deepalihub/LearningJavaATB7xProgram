@@ -1,0 +1,60 @@
+package aug.aug_ex100824.superthiskeywords;
+
+public class RealTimeInheritance {
+    public static void main(String[] args) {
+        BaseClass t1 = new TestCase1();  //Dynamic dispatch runtime
+        //   t1.setBrowser("opera",true);
+        t1.openBrowser();
+        t1.closeBrowser();
+    }
+}
+class TestCase1 extends BaseClass{
+    // TestCase is A type of BaseClass Single Inheritance
+    TestCase1(){
+        super();
+        setBrowser("edge",true);
+    }
+   //  @override
+    public void setBrowser(String browser, boolean isAuth){
+        super.setBrowser(browser,isAuth);
+    }
+
+}
+
+
+
+class BaseClass{
+    BaseClass(){
+        System.out.println("  DC Baseclass ");
+    }
+    BaseClass(String b){
+        System.out.println("   PC  BaseClass ");
+    }
+
+    private String browser;
+
+    public String getBrowser(){
+        return browser;
+    }
+
+    public void setBrowser(String browser,boolean isAuth){
+        if(isAuth){
+        this.browser = browser;
+    }else{
+            System.out.println("Not Allowed");
+        }
+    }
+
+    void openBrowser(){
+
+        System.out.println("Chrome browser");
+    }
+        // Method Overloading
+    void openBrowser(String browsername){
+        System.out.println("open browser  " +browser);
+    }
+
+    void closeBrowser(){
+        System.out.println("Close Browser");
+    }
+}
